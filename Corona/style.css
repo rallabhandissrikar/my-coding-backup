@@ -1,0 +1,8 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(download.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}

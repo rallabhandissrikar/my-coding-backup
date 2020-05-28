@@ -1,0 +1,76 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(5d6e6fe92e22af071d10baca.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: cursive
+}
+
+.bar{
+    background: rgb(0,100,0);
+    text-align: center;
+}
+
+.bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: aliceblue;
+    
+}
+
+.bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px
+    
+}
+
+.bar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.active, .bar ul li:hover{
+    background: #2bab0d;
+    border-radius: 10px;
+} 
+
+.bar .fa{
+    margin-right: 10px;
+}
+ .menu1{
+     display: none;
+ }
+
+ .bar ul li:hover .menu1{
+display: block;
+position: absolute;
+background: rgb(18, 177, 18);
+border-radius: 20px;
+margin-top: 15px;
+margin-left: -15px;
+ }
+ .bar ul li:hover .menu1 ul{
+     display: block;
+     margin: 1px;
+ }
+ .bar ul li:hover .menu1 ul li{
+     width: 150px;
+     padding: 10px;
+     border-bottom: 1px dotted #ffffff;
+     text-align: left;
+
+ }
+
+ .bar ul li:hover .menu1 ul li :last-child{
+     border-bottom: none;
+ }
+
+ .bar ul li .menu1 ul li a :hover{
+     color: #2bab0d;
+ }

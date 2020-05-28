@@ -8,7 +8,7 @@ class Game {
     })
    
   }
-
+ 
   update(state){
     database.ref('/').update({
       gameState: state
@@ -26,10 +26,7 @@ class Game {
     car2=createSprite(300,200);
     car3=createSprite(500,200);
     car4=createSprite(700,200);
-    car1.addImage(cr1);
-    car2.addImage(cr2);
-    car3.addImage(cr3);
-    car4.addImage(cr4);
+    
     cars=[car1,car2,car3,car4];
   }
 
@@ -42,6 +39,10 @@ class Game {
       var index=0;
       var x=0;
       var y;
+      car1.addImage(cr1);
+      car2.addImage(cr2);
+      car3.addImage(cr3);
+      car4.addImage(cr4);
       for(var plr in allPlayers){
         index++;
         x=x+200;
